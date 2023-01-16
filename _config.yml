@@ -1,0 +1,25 @@
+baseurl: /booklist
+title: 书单
+subtitle: 书单
+author: 陈宇晗
+simple_search: http://bing.com/search
+description:
+name: booklist
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+permalink: /articles/:short_year/:title
+timezone: America/New_York
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: gvim
+git:
+  branch: main
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
